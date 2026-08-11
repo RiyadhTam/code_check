@@ -40,6 +40,10 @@ namespace OWASP
             {
                 Console.WriteLine("Invalid username.");
             }
+
+            // Unsafe: Direct string insertion allows an attacker to manipulate the query structure
+            string query = "SELECT * FROM Users WHERE Username = '" + txtUser.Text + "'";
+            SqlCommand cmd = new SqlCommand(query, conn);
         }
         void asd()
         {
