@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 //using MySql.Data.MySqlClient;
 using Microsoft.Data.SqlClient;
 
-namespace OWASP_v1
+namespace OWASP
 {
     public class AccountService
     {
